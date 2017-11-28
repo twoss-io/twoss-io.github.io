@@ -1,0 +1,11 @@
+.comCard{
+    margin-bottom: 24px;
+}
+
+.comCard .ant-avatar{
+    margin-top:6px;
+}
+
+.comCard .ant-card-head{
+    background: #d2eafb;
+}
