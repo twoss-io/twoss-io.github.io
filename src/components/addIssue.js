@@ -1,18 +1,10 @@
 import React, {Component} from 'react';
 import {
-    Icon,
-    Row,
-    Col,
-    Tag,
     Button,
     Form,
     Input,
     message
 } from 'antd';
-
-import $ from 'jquery'
-
-import Issues from './issues'
 
 import {bindActionCreators} from 'redux'
 
@@ -66,7 +58,7 @@ class AddIssue extends Component {
     }
 
     render() {
-        const {getFieldDecorator, getFieldsError, getFieldError, isFieldTouched} = this.props.form;
+        const {getFieldDecorator} = this.props.form;
         const formItemLayout = {
             labelCol: {
                 xs: {

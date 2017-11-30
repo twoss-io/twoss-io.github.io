@@ -2,10 +2,7 @@ import React, {Component} from 'react';
 import {
     Row,
     Col,
-    Icon,
-    Spin,
-    Card,
-    Modal
+    Spin
 } from 'antd';
 import SmallCard from './smallCard'
 import JQCloud from './jqCloud'
@@ -36,7 +33,7 @@ class Groups extends Component {
         let repos = this.props.repos.repos
         let isFetched = this.props.repos.isFetched
         let col = repos.map((item, index) => {
-            if (item.name == 'issues-testing' || item.name == 'twoss-io-videocms-demo' || item.name == 'Main' || item.name == 'demand' || item.name == 'recruitment') {} else {
+            if (item.name === 'twoss-io.origin' ||item.name === 'issues-testing' || item.name === 'twoss-io-videocms-demo' || item.name === 'Main' || item.name === 'demand' || item.name === 'recruitment') {} else {
                 return <Col
                     lg={6}
                     md={4}

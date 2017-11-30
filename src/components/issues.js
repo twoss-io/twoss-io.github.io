@@ -1,19 +1,13 @@
 import React, {Component} from 'react';
 import {
-    Icon,
-    Card,
     Row,
     Col,
-    Tag,
-    Button,
     Spin,
     Collapse
 } from 'antd';
 
 import IssHead from './issHead'
 import CommentList from './commentList'
-
-import $ from 'jquery'
 
 import {bindActionCreators} from 'redux'
 
@@ -25,29 +19,13 @@ import './issues.css'
 
 const Panel = Collapse.Panel;
 
-const customPanelStyle = {
-    background: '#f7f7f7',
-    borderRadius: 4,
-    marginBottom: 24,
-    border: 0,
-    overflow: 'hidden'
-};
-
 class Issues extends Component {
-    constructor(props) {
-        super(props)
-    }
-
-    componentWillMount() {}
-
     componentDidMount() {
         this
             .props
             .pageActions
             .fetchIssues(this.props.repo)
     }
-
-    componentDidUpdate() {}
 
     render() {
         let repo = this.props.repo

@@ -1,11 +1,6 @@
 import React, {Component} from 'react';
 import {
     Icon,
-    Card,
-    Row,
-    Col,
-    Tag,
-    Button,
     Tabs
 } from 'antd';
 

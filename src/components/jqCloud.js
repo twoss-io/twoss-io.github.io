@@ -21,7 +21,7 @@ class JQCloud extends Component {
     componentWillMount() {
         let words = []
         this.props.item.forEach(item => {
-            if (item.name == 'issues-testing' || item.name == 'twoss-io-videocms-demo' || item.name == 'Main' || item.name == 'demand' || item.name == 'recruitment') {} else {
+            if (item.name === 'twoss-io.origin' ||item.name === 'issues-testing' || item.name === 'twoss-io-videocms-demo' || item.name === 'Main' || item.name === 'demand' || item.name === 'recruitment') {} else {
                 words.push({
                     text: item.description || item.name,
                     weight: item.open_issues_count

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Row, Col, Icon, Spin, Card, Modal, Button} from 'antd';
+import {Row, Col, Icon, Spin, Modal, Button} from 'antd';
 import DelayCard from './delayCard'
 import {fetchRepos} from '../actions/actions'
 import {bindActionCreators} from 'redux'

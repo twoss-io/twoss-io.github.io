@@ -6,18 +6,11 @@ import {
     Tag
 } from 'antd';
 
-import $ from 'jquery'
-
 import {bindActionCreators} from 'redux'
 
 import {connect} from 'react-redux'
 
-import {fetchIssues} from '../actions/actions'
-
 class IssHead extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     componentWillMount() {}
 

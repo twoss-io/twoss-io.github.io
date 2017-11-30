@@ -196,7 +196,7 @@ function getMd(json = []) {
 
 export function fetchRepos(page) {
     let suger = ''
-    if (page == 'home') {
+    if (page === 'home') {
         suger = '?sort=updated&page=1&per_page=4'
     }
     return dispatch => {

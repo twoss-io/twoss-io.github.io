@@ -1,10 +1,7 @@
 import React, {Component} from 'react'
 import {bindActionCreators} from 'redux'
-import * as pageActions from '../actions/actions'
 import {connect} from 'react-redux'
-import {Layout, Menu, Row, Col, Icon, Form, Modal, Input, Button, message} from 'antd';
-import Media from 'react-media'
-// import * as pageActions from './actions/PageActions'
+import {Layout, Icon, Form, Modal, Input, Button, message} from 'antd';
 import Headers from '../components/header'
 import Home from '../components/home'
 import Groups from '../components/groups'

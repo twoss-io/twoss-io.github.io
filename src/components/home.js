@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {Row, Col, Icon, BackTop, Card} from 'antd';
-import Media from 'react-media'
 import BannerSlider from './bannerSlider'
 import MyAnchor from './myAnchor'
 import Events from './events'
@@ -89,7 +88,7 @@ export default class Home extends Component {
                         <Col span={2}/>
                         <Col span={8}>
                             <Card  
-                            onClick={()=>window.open('http://twoss.io/oss-tourist/', '_blank')} 
+                            onClick={()=>{let win = window.open('http://twoss.io/oss-tourist/', '_blank'); win.opener=null}} 
                             bodyStyle={{
                                 padding: 0,
                                 cursor:'pointer'
@@ -103,14 +102,14 @@ export default class Home extends Component {
                                 </div>
                                 <div className="custom-card">
                                     <h3>開源圖書館</h3>
-                                    <p><a target="_blank" href="http://twoss.io/oss-tourist/">oss-tourist</a></p>
+                                    <p><a target="_blank" href="http://twoss.io/oss-tourist/" rel="noopener noreferrer">oss-tourist</a></p>
                                 </div>
                             </Card>
                         </Col>
                         <Col span={4}/>
                         <Col span={8}>
                             <Card 
-                            onClick={()=>window.open('http://twoss.io/oss-collection/index.html', '_blank')} 
+                            onClick={()=>{let win = window.open('http://twoss.io/oss-collection/index.html', '_blank'); win.opener=null}} 
                             bodyStyle={{
                                 padding: 0,
                                 cursor:'pointer'
@@ -124,7 +123,7 @@ export default class Home extends Component {
                                 </div>
                                 <div className="custom-card">
                                     <h3>開源大補帖</h3>
-                                    <p><a target="_blank"  href="http://twoss.io/oss-collection/index.html">oss-collection</a></p>
+                                    <p><a target="_blank"  href="http://twoss.io/oss-collection/index.html" rel="noopener noreferrer">oss-collection</a></p>
                                 </div>
                             </Card>
                         </Col>

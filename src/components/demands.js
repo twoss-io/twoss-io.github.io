@@ -1,15 +1,8 @@
 import React, {Component} from 'react';
 import {
     Icon,
-    Card,
-    Row,
-    Col,
-    Tag,
-    Button,
     Tabs
 } from 'antd';
-
-import $ from 'jquery'
 
 import Issues from './issues'
 

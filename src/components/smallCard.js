@@ -5,12 +5,10 @@ import {
     Row,
     Col,
     Tag,
-    Avatar,
     Button,
     Modal
 } from 'antd';
 import Detail from './detail'
-import $ from 'jquery'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import './smallCard.css'

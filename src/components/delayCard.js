@@ -5,7 +5,6 @@ import {
     Row,
     Col,
     Tag,
-    Avatar,
     Button
 } from 'antd';
 import './delayCard.css'

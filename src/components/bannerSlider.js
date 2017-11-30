@@ -3,8 +3,6 @@ import { connect } from 'react-redux'
 import {bindActionCreators} from 'redux'
 import {nxtimg, preimg, displayImg, showLoginModal} from '../actions/actions'
 import {
-    Row,
-    Col,
     Icon,
     Button,
     Card,
@@ -12,10 +10,6 @@ import {
 } from 'antd';
 import Media from 'react-media'
 import './bannerSlider.css'
-let p1 = require("../img/pexels-photo-60132.jpeg")
-let p2 = require("../img/pexels-photo-336232.jpeg")
-let p3 = require("../img/pexels-photo-210158.jpeg")
-const imgPack = [p1, p2, p3]
 
 class BannerSlider extends Component {
     componentDidMount() {

@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
 import {
-    Icon,
     Row,
     Col,
-    Tag,
-    Badge,
     Card,
     Spin,
     Avatar,
@@ -13,8 +10,6 @@ import {
     Input,
     message
 } from 'antd';
-
-import $ from 'jquery'
 
 import {bindActionCreators} from 'redux'
 
@@ -75,7 +70,7 @@ class CommentList extends Component {
     }
 
     render() {
-        const { getFieldDecorator, getFieldsError, getFieldError, isFieldTouched } = this.props.form;
+        const { getFieldDecorator } = this.props.form;
 
         let isFetched = this.props.comments.isFetched
         let repo = this.props.repo
