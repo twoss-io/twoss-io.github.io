@@ -346,7 +346,7 @@ export default class Home extends Component {
                                         type="environment"
                                         style={{
                                         color: '#f99200'
-                                    }}/>&nbsp; 10574 台北市松山區民生東路4段133號8樓</li>
+                                    }}/>&nbsp; 10574 台北市松山區民生東路4段133號2樓</li>
                                 <li>
                                     <Icon
                                         type="mail"

@@ -10,12 +10,14 @@ export default class Events extends Component {
                     padding: 16
                 }}>
                     <Card
+                        onClick={()=>window.open('/2017Tech.html', '_blank')} 
                         style={{
                         width: '100%',
                         height: 300
                     }}
                         bodyStyle={{
-                        padding: 0
+                        padding: 0,
+                        cursor:'pointer'
                     }}>
                         <div
                             className="custom-image"
