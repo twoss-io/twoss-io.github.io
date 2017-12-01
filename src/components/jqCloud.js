@@ -19,47 +19,45 @@ class JQCloud extends Component {
     }
 
     componentWillMount() {
-        let words = []
-        this.props.item.forEach(item => {
-            if (item.name === 'twoss-io.origin' ||item.name === 'issues-testing' || item.name === 'twoss-io-videocms-demo' || item.name === 'Main' || item.name === 'demand' || item.name === 'recruitment') {} else {
-                words.push({
-                    text: item.description || item.name,
-                    weight: item.open_issues_count
-                })
-            }
-        });
-        this.setState({
-            words:words
-        })
-    }
-
-    componentDidMount() {
-        this.initCloud()
-    }
-
-    componentDidUpdate(){
         
     }
 
-    initCloud=()=>{
-        $(this.refs.cloud).jQCloud(this.state.words, {
-            // colors:['#FA9513','#FFC06E','#FA9513','#4F8AAB','#83CEF7'],
-            colors: ['#fff'],
-            height: 300,
+    componentDidMount() {
+        
+    }
+
+    componentWillReceiveProps(nextProps){
+        let words = []
+        nextProps.item.forEach(item => {
+            if (item.name === 'twoss-io.origin' ||item.name === 'issues-testing' || item.name === 'twoss-io-videocms-demo' || item.name === 'Main' || item.name === 'demand' || item.name === 'recruitment') {} else {
+                words.push({
+                    text: item.description || item.name,
+                    weight: new Date(item.updated_at).getTime()
+                })
+            }
+        });
+
+        this.initCloud(words)
+    }
+
+    initCloud=(words)=>{
+        $('#cloud').jQCloud(words, {
+            colors:['#fff', '#FA9513','#FFC06E','#FA9513','#4F8AAB','#83CEF7'],
+            // colors: ['#fff'],
+            height: 260,
             delay: 10,
             autoResize: true
         });
-        $(this.refs.cloud).addClass('bounceIn')
+        $('#cloud').addClass('bounceIn')
     }
 
     render() {
         return (
             <div>
                 <div id="cloudDiv"> 
-
-                </div>
-                <div id="cloudOuter">
-                    <div ref="cloud" className="animated"></div>
+                    <div id="cloudOuter">
+                        <div id="cloud" ref="cloud" className="animated"></div>
+                    </div>
                 </div>
             </div>
         )

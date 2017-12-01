@@ -10,6 +10,7 @@ export default class MyAnchor extends Component {
             <div className={'anchorBlock'}>
                 <div className={'anchorBody'}>
                 <Anchor offsetTop={96}>
+                    <Link href="#recent" title="近期活動"/>
                     <Link href="#hot" title="熱門討論"/>
                     <Link href="#links" title="相關連結"/>
                     <Link href="#about" title="關於我們"/>

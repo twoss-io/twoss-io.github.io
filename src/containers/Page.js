@@ -31,10 +31,6 @@ class Page extends Component {
         }
     }
 
-    componentDidMount(){
-        console.log(this.props.user)
-    }
-
     handleSubmit = (e) => {
         e.preventDefault();
         this

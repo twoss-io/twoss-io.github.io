@@ -26,7 +26,7 @@ class Groups extends Component {
         this
             .props
             .pageActions
-            .fetchRepos()
+            .fetchRepos('?sort=updated')
     }
 
     render() {

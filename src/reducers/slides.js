@@ -6,12 +6,15 @@ import {
 
 const initialState = {
     now: 0,
-    total: 3,
+    total: 4,
     show:true,
     imgs: [
-        require("../img/pexels-photo-60132.jpeg"), require("../img/pexels-photo-336232.jpeg"), require("../img/pexels-photo-210158.jpeg")
+        require("../img/invitation.png"), require("../img/pexels-photo-60132.jpeg"), require("../img/pexels-photo-336232.jpeg"), require("../img/pexels-photo-210158.jpeg")
     ],
     text: [{
+        a: '',
+        b: ''
+    },{
         a: '開放源始碼力量',
         b: '成就非凡'
     },{

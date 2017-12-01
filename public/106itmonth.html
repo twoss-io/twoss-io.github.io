@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>臺灣開源軟體協作工坊</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome for icons -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- animated css  -->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="screen">
+    <!--owl carousel css-->
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- custom css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+</head>
+
+<body data-spy="scroll" data-offset="80">
+    <!--navigation -->
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top trans-after" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/"><img src="img/icon.png" alt="avatar" class="mw50"></a>
+                <a class="navbar-brand" href="index.html">
+                    <span></span>
+                </a>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <!--.navbar-default-->
+    <div style="width:100%;margin-top:80px">
+        <img src="img/banner.jpg" alt="" class="" style="width:100%;height:auto">
+    </div>
+
+    <hr/>
+    <div class="divide40"></div>
+    <div class="container" style="min-height:800px">
+        <div class="row">
+            <div class="col-lg-12" id="month_tabs">
+                <ul class="nav nav-pills nav-justified">
+                    <li role="presentation" class="active">
+                        <a aria-controls="invite" role="pill" data-toggle="pill" href="#invite">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i> 詳細內容</a>
+                    </li>
+                    <li role="presentation">
+                        <a aria-controls="unit" role="pill" data-toggle="pill" href="#unit">
+                            <i class="fa fa-users" aria-hidden="true"></i> 參展單位</a>
+                    </li>
+                    <li role="presentation">
+                        <a aria-controls="classroom" role="pill" data-toggle="pill" href="#classroom">
+                            <i class="fa fa-pencil" aria-hidden="true"></i> 小講堂</a>
+                    </li>
+                </ul>
+                <hr style="border-top: dashed 1px #f99200;" />
+                <div class="tab-content">
+                    <div role="tabpanel" id="invite" class="tab-pane fade in active">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <img src="img/detail.jpg" alt="" class="" style="width:100%;height:auto">
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" id="unit" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 imgdiv">
+                                <div class="circle">
+                                    <div class="inner" style="background-image:url('img/openstack-icon.png')">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 desdiv">
+                                <h4>OpenStack Taiwan User Group</h4>
+                                <span class="label label-success"><a href="https://www.facebook.com/groups/openstack.tw/" target="_blank">hhttps://www.facebook.com/groups/openstack.tw/</a></span>
+                                <p>
+                                    OpenStack Taiwan User Group 是由台灣 OpenStack 使用者與開發者們共同創立的公開性社團，並利用 Meetup 定期在各台灣舉辦技術與推廣分享活動。而近年來由於其他開放式原始碼專案，如 Ceph, Kubernetes
+                                    與 SDN 等紛紛與 OpenStack 進行密切整合，故本社團也加入 Cloud Native Taiwan User Group 以邀請這些領域專業講者來探討上述專案在
+                                    OpenStack 中是如何運作。目的是藉此群策群力來使該社團快速成長，以對台灣在雲端開源平台的貢獻，另外我們更希望該社群持有 Cloud Native 的概念，並將此推廣至台灣企業、學校、政府單位等。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 imgdiv">
+                                <div class="circle">
+                                    <div class="inner" style="background-image:url('img/sitcon.png')">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 desdiv">
+                                <h4>SITCON 學生計算機年會</h4>
+                                <span class="label label-success"><a href="http://sitcon.org/" target="_blank">sitcon.org/</a></span>
+                                <p>
+                                    SITCON 學生計算機年會係一學生自發組成的研討會，秉持著以學生為主軸的核心價值，藉以凝聚與傳遞學生的力量。希望藉由提供一個經驗交流與資訊技術實務分享的平台，使已有成就者能夠傳承己身經驗，嶄露頭角者在激盪中獲得靈感與啟發，並同時讓初入茅廬者得以對資訊科學有更深入的了解；進而達到「學以致用、教學相長」的目標。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 imgdiv">
+                                <div class="circle">
+                                    <div class="inner" style="background-image:url('img/ubuntu.svg')">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 desdiv">
+                                <h4>Ubuntu-TW | Ubuntu 台灣社群</h4>
+                                <span class="label label-success"><a href="https://www.ubuntu-tw.org/" target="_blank">www.ubuntu-tw.org/</a></span>
+                                <p>
+                                    Ubuntu 台灣社群，簡稱 Ubuntu-TW，成立於 2006 年，是全球 Ubuntu 在地社群中相當早成立的在地社群之一。Ubuntu-TW 由多位義工組成，旨在推廣Ubuntu這個由 Linux 核心及多個自由/開源軟體組成的作業系統(或通稱「發行版」)，協助解決使用者在安裝、使用
+                                    Ubuntu 時所遭遇到的疑難雜症，以及 Ubuntu 的在地化，並與其他社群合作，推廣自由軟體/開源軟體及開放文化。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 imgdiv">
+                                <div class="circle">
+                                    <div class="inner" style="background-image:url('img/postgre.png')">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 desdiv">
+                                <h4>開源資料庫社群 Open Source Database Communities</h4>
+                                <span class="label label-success"><a href="http://postgresql.tw" target="_blank">台灣PostgreSQL使用者社群 postgresql.tw</a></span>
+                                <p>
+                                    <h5>台灣PostgreSQL 使用者社群</h5>
+                                    <p>今年度台灣PostgreSQL使用者社群正式成立，主要目標是提供台灣本地的使用者可以有方便的交流管道。已經開始推動的專案是正體中文版的手冊及PostgreSQL大補帖。接下來籌備社群大會，期待舉辦實體社群交流，能對台灣使用者更有幫助。</p>
+                                    <p>
+                                        <span class="label label-warning"><a href="http://postgresql.tw" target="_blank">官方網站：postgresql.tw</a></span>&nbsp;
+                                        <span class="label label-warning"><a href="mailto:contact@postgresql.tw">聯絡方式：contact@postgresql.tw</a></span>&nbsp;
+                                        <span class="label label-warning"><a href="ttps://gitter.im/pgsql-tw/Lobby" target="_blank">來聊聊吧：gitter.im/pgsql-tw/Lobby</a></span>&nbsp;
+                                    </p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 imgdiv">
+                                <div class="circle">
+                                    <div class="inner" style="background-image:url('img/itri.jpg')">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 desdiv">
+                                <h4>開源應用技術研發人才培育計畫-工研院資通所</h4>
+                                <span class="label label-success"><a href="https://www.itri.org.tw/eng/" target="_blank">www.itri.org.tw/eng/</a></span>
+                                <p>
+                                    行政院推動「數位國家‧創新經濟發展方案」 (2017~2025年)，簡稱DIGI+，做為鞏固「五加二」產業的基盤，推動重心從硬體移往軟體等應用面，包括了數位經濟、共享經濟、電子商務及金融科技等。 工研院資通所與資策會以DIGI+發展方案，推動主軸「跨域數位人才」之推動策略「鏈結國際開放創新資源，加速設計開發能力」推動策略為政策依據，預計以開源技術支援5+2產業創新，先以培育開源技術應用菁英人才為基礎，深化開源軟體技術能力，並且配合利用開源技術的研發成果，培養工程師的開放程式客製化與整合能力，成為國際開源領導者。
+                                    本分項計畫針對開源大數據人才培育，結合產政學與社群能量，積極運用開源共享資源，培養菁英平台開發服務人才，擴展開源文化與產業效益。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 imgdiv">
+                                <div class="circle">
+                                    <div class="inner" style="background-image:url('img/itri.jpg')">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 desdiv">
+                                <h4>ITRI OpenStack Distribution (IOD) 雲端資料中心解決方案</h4>
+                                <p>
+                                    工研院研發的IOD採用OpenStack架構，可滿足營運商等級需求的大型雲端資料中心IaaS解決方案，且適用於企業建置私有雲、公有雲和混合雲。 IOD整合高效能分散式區塊儲存DISCO for Cinder plug-in、動態網路規劃Peregrine
+                                    for Neutron plug-in、實體資料中心管理技術PDCM(Physical Data Center Management) ，WEB應用防火牆WAF(Web
+                                    Application Firewall)，HA強化平台高可用性，具備實體主機及虛擬資源之監控管理，確保營運服務品質。此外，另於IOD上加裝OpenStack Ceilometer與Trove專案，開發雲系統監控管理與雲資源量測分析、資料庫管理與日誌監控兩項技術。於Ceilometer專案上，著重於資源收集機制以及數據儲存技術的研究。於Trove專案上，定義出更好的日誌管理機制，提供雲資料庫的除錯及備份技術，方便管理者使用。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 imgdiv">
+                                <div class="circle">
+                                    <div class="inner" style="background-image:url('img/sp.jpg')">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 desdiv">
+                                <h4>Simple Care - 開放長照智慧系統</h4>
+                                <span class="label label-success"><a href="https://www.facebook.com/groups/664434100418340/" target="_blank">https://www.facebook.com/groups/664434100418340/</a></span>
+                                <p>
+                                    關於長照，Maker們可以做些什麼？如果希望在上班上課時間知道家中長輩的狀況，又不希望使用無線攝影機剝奪隱私，該怎麼做？如何解決晚輩上班上課，長輩獨居獨處所衍生的照護等問題?
+                                </p>
+                                <p>
+                                    Simple Care透過開源的方式搞定! 利用AI去學習長輩一整天的作息，並藉由眾人的力量來實現，適合追蹤老人在家行動是否異常的照護系統
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 imgdiv">
+                                <div class="circle">
+                                    <div class="inner" style="background-image:url('img/infotech.jpg')">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 desdiv">
+                                <h4>傑科技有限公司 InfoWize Technology Corp.</h4>
+                                <span class="label label-success"><a href="http://www.infowize.com.tw" target="_blank">www.infowize.com.tw</a></span>
+                                <p>
+                                    威傑科技有限公司主要從事電腦系統整合服務業，致力於資訊科技服務市場的開拓與服務內容的提供，集合國內外資訊科技服務及各領域技術的結合，不宥於既有市場的產品與現況，搭配開源的軟體，以客戶本位利益、需求與問題解決為出發點，用中立客觀的角度為客戶提供IT諮詢的專業服務，採診斷式為客戶量身製訂，尋求具廣度、深度與精度的整體解決方案，提供最完善的資訊系統整合服務，並有別於一般傳統的系統整合與
+                                    IT 設備的提供廠商。 主要服務項目為: SDS儲存系統、開源軟體研發整合、資料保護方案、資料庫系統、高可用度運算系統、主機系統、網路服務系統及各式磁帶櫃和備份磁帶。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 imgdiv">
+                                <div class="circle">
+                                    <div class="inner" style="background-image:url('img/intro-logo.jpg');background-position:0,0;">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 desdiv">
+                                <h4>晟鑫科技股份有限公司 OSS Integral Institute Co., Ltd.</h4>
+                                <span class="label label-success"><a href="http://www.ossii.com.tw" target="_blank">www.ossii.com.tw</a></span>
+                                <p>
+                                    關於晟鑫科技 出自對開放原始碼的熱愛與信心，晟鑫科技創業團隊以過去多年在開放原始碼領域所累積的經驗及前瞻性眼光，洞悉開放原始碼潮流已在企業應用系統市場中逐漸發酵成為另一股新勢力，因而積極籌組實力堅強的專業技術團隊，于2003年11月正式創立晟鑫科技股份有限公司，以大中華地區為市場，眼觀全球，目標成為國際級首屈一指的開放原始碼商業方案公司，利用開放原始碼提供客戶全方位的【產品開發】、【IT環境架構諮詢】、【應用軟體規劃開發與整合】、【資訊系統委外管理服務】、【人才培訓】等基於開放原始碼架構之專業級服務。
+                                    相較於單一系統平台下的解決方案，晟鑫科技致力於提供客戶更貼近企業需求的多元化選擇與服務，有別於傳統系統顧問業者的服務方式，晟鑫科技靈活的整合與包裝了開放環境中的各種應用系統資源，搭配以封閉環境中其他應用系統，從最經濟的成本考量出發，思考如何協助客戶擁有兼具穩定、安全與高品質的資訊系統環境，再進而提昇客戶整體行政效率、業務競爭優勢及創造最高利潤。
+                                    「誠心服務，誠信為本，客戶為尊，團隊精神」的經營理念
+                                </p>
+                                <p>這是一個專業服務、以人為本的時代，晟鑫科技的經營理念由傾聽客戶心聲開始，充分發揮團隊合作的精神，集思廣益從客戶角度多面向的思考各項需求及其必要性，提供專業、客觀、全方位的各項服務與諮詢，講求的是與客戶間融洽的互動與全心信賴，並建立長遠密切的合作關係，以極致完美的表現達到客戶最高滿意度為第一目標。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 imgdiv">
+                                <div class="circle">
+                                    <div class="inner" style="background-image:url('img/ict.png')">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 desdiv">
+                                <h4>聚碩科技</h4>
+                                <span class="label label-success"><a href="http://www.sysage.com.tw" target="_blank">www.sysage.com.tw</a></span>
+                                <p>
+                                    The ICT Solution Provider 聚碩科技 自1998年成立以來，即以「The ICT Solution Provider 專業資訊應用服務供應商」的角色自許，希望能為經銷夥伴與企業用戶提供一流的產品及專業服務並成為業界的最佳加值服務名牌通路商。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 imgdiv">
+                                <div class="circle">
+                                    <div class="inner" style="background-image:url('img/status.png')">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 desdiv">
+                                <h4>狀態網際網路股份有限公司</h4>
+                                <span class="label label-success"><a href="http://www.status.com.tw" target="_blank">www.status.com.tw</a></span>
+                                <p>
+                                    狀態公司成立於1997年，成立之初為透過E化提供企業工作流程的解決方案、並將環境保護的概念帶入企業創造無紙化的環境，透過Web Service的系統帶入企業使企業節省許多人力物力的成本，以期成為領導企業的資訊軟體公司。 我們所研發的產品致力於服務設計的角度出發，研究出以人為本的應用系統，於2000年推出台灣第一套
+                                    EIP 套裝軟體，所發表的使用者使用UI，得到業界反應熱烈，媒體爭相採訪。 2000~2011年持續開發企業、政府內部相關運用系統，如下列出之公司目前自有品牌軟體。 2012~2015年公司開始Embedded
+                                    Linux自由軟體開發,開發產品著重於網路通訊,無線AP,xDSL等產品,軟體並陸續獲得各大網通廠採用. 2016~2017發展視訊會議室(PowerMeeting)、物聯網智慧型辦公室系統及醫療用物聯網監測系統。
+                                </p>
+                                <p>
+                                    目前公司之主要產品線為:
+                                    <br/> 一. 企業資訊入口平台(EIP)、表單電子化系統、工作流程(Flow)系統等，線上視訊會議室系統自有品牌軟體等。
+                                    <br/> 公司目前自有品牌軟體有
+                                    <br/> 1.PowerEIP(企業資訊入口平台)
+                                    <br/> 2.PowerFlow(工作流程)
+                                    <br/> 3.PowerMeeting(視訊會議室系，BigBlueButton)
+                                    <br/> 二. ISO Router(Embedded Linux)
+                                    <br/> 軟體包含:
+                                    <br/> 1. WIFI Router
+                                    <br/> 2. xDSL Modem
+                                    <br/> 3. TR069
+                                    <br/> 4. Appliction
+                                    <br/> 5. Driver
+                                    <br/> 6. Web GUI
+                                    <br/> 7. System
+                                    <br/> 8. VOIP
+                                    <br/> 公司朝自由軟體進行，Embedded Linxu,，可採用我們開發平台開發更多系統，帶入雲端技術。期能引領企業及政府資訊更為精進，我們也開發多國語系產品，朝向國際化的方向邁進。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" id="classroom" class="tab-pane fade">
+                        <div>
+                            <span style="color:red">*</span> 主辦單位保留議程更動之權利，敬請留意相關訊息。
+                        </div>
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="text-align:left;width:25.51mm;" class="ce23">
+                                        <p>日期／時段</p>
+                                    </th>
+                                    <th style="text-align:left;" class="ce26">
+                                        <p>14:00-14:30 </p>
+                                    </th>
+                                    <th style="text-align:left;" class="ce26">
+                                        <p>14:30-15:00 </p>
+                                    </th>
+                                    <th style="text-align:left;" class="ce26">
+                                        <p>15:00-15:30</p>
+                                    </th>
+                                    <th style="text-align:left;" class="ce26">
+                                        <p>15:30-16:00</p>
+                                    </th>
+                                    <th style="text-align:left;" class="ce29">
+                                        <p>16:00-16:30</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="ro16">
+                                    <td style="text-align:left" class="ce24">
+                                        <p>12/6 (三)</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>SITCON</p>
+                                        <p>- 開放原始碼與社群經營之道</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>SITCON</p>
+                                        <p>- 開放原始碼與社群經營之道</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>威傑科技</p>
+                                        <p>- 開源軟體的應用</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>Simple Care</p>
+                                        <p>- 開放長照智慧系統應用</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce30">
+                                        <p>Kubernetes</p>
+                                        <p>-Kuberntes 應用使用案例</p>
+                                    </td>
+                                </tr>
+                                <tr class="ro16">
+                                    <td style="text-align:left" class="ce24">
+                                        <p>12/7 (四)</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>OPEN STACK</p>
+                                        <p>- Introduction to OpenStack</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>SITCON</p>
+                                        <p>- 開放原始碼與社群經營之道</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>SITCON</p>
+                                        <p>- 開放原始碼與社群經營之道</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>開源資料庫</p>
+                                        <p>- PostgreSQL 10 介紹(TWPUG)　</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce30">
+                                        <p>開源資料庫</p>
+                                        <p>- TWPUG社群規畫介紹</p>
+                                    </td>
+                                </tr>
+                                <tr class="ro16">
+                                    <td style="text-align:left" class="ce24">
+                                        <p>12/8 (五)</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>威傑</p>
+                                        <p>- 開源軟體儲存的應用</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>SITCON</p>
+                                        <p>- 開放原始碼與社群經營之道</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>開源大數據分項計畫-開源大數據平台服務</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>SITCON</p>
+                                        <p>- 開放原始碼與社群經營之道</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce30">
+                                        <p>Kubernetes</p>
+                                        <p>-An Introduction to Kubernetes </p>
+                                    </td>
+                                </tr>
+                                <tr class="ro16">
+                                    <td style="text-align:left" class="ce24">
+                                        <p>12/9 (六)</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>SITCON</p>
+                                        <p>- 開放原始碼與社群經營之道</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>威傑科技</p>
+                                        <p>- 開源軟體在企業內的實際使用案例</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>SITCON</p>
+                                        <p>- 開放原始碼與社群經營之道</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>OPEN STACK</p>
+                                        <p>- 開放原始碼與社群經營之道　</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce30">
+                                        <p>Kubernetes</p>
+                                        <p>-An Introduction to Kubernetes </p>
+                                    </td>
+                                </tr>
+                                <tr class="ro17">
+                                    <td style="text-align:left" class="ce24">
+                                        <p>12/10 (日)</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>OPEN STACK</p>
+                                        <p>- Deploy and Utilize OpenStack with Ansible</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>SITCON</p>
+                                        <p>- 開放原始碼與社群經營之道</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>OPEN STACK</p>
+                                        <p>- How to integrate Kubernetes in OpenStack　</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce27">
+                                        <p>SITCON</p>
+                                        <p>- 開放原始碼與社群經營之道</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce31"> </td>
+                                </tr>
+                                <tr class="ro18">
+                                    <td style="text-align:left" class="ce25">
+                                        <p>12/11 (一)</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce28">
+                                        <p>SITCON</p>
+                                        <p>- 開放原始碼與社群經營之道</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce28">
+                                        <p>開源資料庫</p>
+                                        <p>- PostgreSQL 10 介紹(TWPUG)　</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce28">
+                                        <p>開源資料庫</p>
+                                        <p>- TWPUG社群規畫介紹</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce28">
+                                        <p>SITCON</p>
+                                        <p>- 開放原始碼與社群經營之道</p>
+                                    </td>
+                                    <td style="text-align:left;" class="ce32"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--static wrapper-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="text-align:center">
+                        <span>Copyright © Digital Transformation Institute(DTI), Institute for Information Industry(III)
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--footer btm-->
+        </div>
+    </footer>
+    <!--footer end-->
+    <!--scripts and plugins -->
+    <!--must need plugin jquery-->
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap js plugin-->
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!--easing plugin for smooth scroll-->
+    <script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <!--easing plugin for nice scroll scroll-->
+
+    <!--parallax background plugin-->
+    <script src="js/jquery.stellar.min.js" type="text/javascript"></script>
+    <!--digit countdown plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!--digit countdown plugin-->
+    <script src="js/jquery.counterup.min.js" type="text/javascript"></script>
+    <!--on scroll animation-->
+    <script src="js/wow.min.js" type="text/javascript"></script>
+    <!--owl carousel slider-->
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <!--customizable plugin edit according to your needs-->
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="js/google_analystics.js" type="text/javascript"></script>
+    <!--gmap js-->
+    <!--
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript">
+            var myLatlng;
+            var map;
+            var marker;
+
+            function initialize() {
+                myLatlng = new google.maps.LatLng(25.058575, 121.554801);
+
+                var mapOptions = {
+                    zoom: 15,
+                    center: myLatlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    scrollwheel: false,
+                    draggable: false
+                };
+                map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+                var contentString = '<p style="line-height: 20px;"><strong>民生科大樓</strong></p><p>Taipei City, 10574</p>';
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
+
+                marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: 'Marker'
+                });
+
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map, marker);
+                });
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>//-->
+</body>
+
+</html>

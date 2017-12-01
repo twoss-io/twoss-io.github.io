@@ -25,9 +25,66 @@ export default class Home extends Component {
                     <MyAnchor/>
                     <Row
                         gutter={0}
+                        id="recent"
+                        style={{
+                        marginTop: '64px',
+                        marginLeft: 128,
+                        marginRight: 128,
+                    }}>
+                        <Col
+                            span={24}
+                            style={{
+                            textAlign: 'center'
+                        }}>
+                            <h1>近期活動</h1>
+                            <hr
+                                style={{
+                                marginTop: '12px',
+                                marginLeft: 256,
+                                marginRight: 256,
+                                border:'none',
+                                borderTop: 'dashed 4px',
+                                borderWidth: 1,
+                                borderColor: '#f99200'
+                            }}/>
+                        </Col>
+                    </Row>
+                    <Row
+                        style={{
+                        margin: '32px 0px',
+                        padding:'0px 128px'
+                    }}>
+                        <Col span={12} offset={6} >
+                            <Card
+                                onClick={()=>window.open('/106itmonth.html', '_blank')} 
+                                style={{
+                                width: '100%'
+                            }}
+                                bodyStyle={{
+                                padding: 0,
+                                cursor:'pointer'
+                            }}>
+                                <div
+                                    className="custom-image"
+                                    style={{
+                                    height: 100
+                                }}>
+                                    <div className="custom-img" style={{backgroundImage:'url("'+require('../img/106itmonth.jpg')+'")'}}/>
+                                </div>
+                                <div className="custom-card">
+                                    <h3>106 資訊月</h3>
+                                    <p>開源軟體館</p>
+                                    <p>日期：106/12/6~12/11 | 10:00~18:00</p>
+                                    <p>地點：台北世貿一館 | 台北市信義路5段5號</p>
+                                </div>
+                            </Card>
+                        </Col>
+                    </Row>
+                    <Row
+                        gutter={0}
                         id="hot"
                         style={{
-                        marginTop: '32px',
+                        paddingTop: '64px',
                         marginLeft: 128,
                         marginRight: 128,
                     }}>
@@ -38,7 +95,7 @@ export default class Home extends Component {
                         }}>
                             <h1>熱門群組</h1>
                             <p><Icon type="message"/>
-                                The most popular discussion groups on Twoss-io</p>
+                                The most popular discussion co-Labs on Twoss-io</p>
                             <hr
                                 style={{
                                 marginTop: '12px',

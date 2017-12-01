@@ -24,9 +24,10 @@ class BannerSlider extends Component {
                         style={{
                         display: show,
                         backgroundImage: 'url(' + imgs[now] + ')'
-                    }}></div>
+                    }}>
+                    </div>
                     <div className={'bannerBtn'}>
-                        <Button shape="circle" icon="left" size='large' ghost onClick={()=>{
+                        <Button type="primary" shape="circle" icon="left" size='large' onClick={()=>{
                             this.props.bannerAction.displayImg('none')
                             this.props.bannerAction.preimg();
                             setTimeout(()=>{
@@ -34,7 +35,7 @@ class BannerSlider extends Component {
                             }, 100)
                         }}/>
                         &nbsp;&nbsp;&nbsp;
-                        <Button shape="circle" icon="right" size='large' ghost onClick={()=>{
+                        <Button type="primary" shape="circle" icon="right" size='large' onClick={()=>{
                             this.props.bannerAction.displayImg('none')
                             this.props.bannerAction.nxtimg();
                             setTimeout(()=>{

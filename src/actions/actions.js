@@ -194,11 +194,7 @@ function getMd(json = []) {
     }).catch(err => console.log(err))
 }
 
-export function fetchRepos(page) {
-    let suger = ''
-    if (page === 'home') {
-        suger = '?sort=updated&page=1&per_page=4'
-    }
+export function fetchRepos(suger = '') {
     return dispatch => {
         return new Promise((resolve, reject)=>{
             dispatch(requestRepos())

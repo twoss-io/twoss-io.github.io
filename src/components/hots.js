@@ -23,7 +23,7 @@ class Hots extends Component {
         this
             .props
             .pageActions
-            .fetchRepos('home').then(res=>{
+            .fetchRepos('?sort=updated').then(res=>{
                 
             }, fail=>{
                 this.setState({
@@ -51,11 +51,21 @@ class Hots extends Component {
     render() {
         let repos = this.props.repos.repos
         let isFetched = this.props.repos.isFetched
-        let col = repos.map((item, index) => <Col lg={6} md={12} sm={24} key={index} style={{
-            padding: 8
-        }}>
-            <DelayCard wait={index * 500} item={item} index={index} setMd = {this.setModal}/>
-        </Col>)
+        let flag = 0
+        let col = repos.map((item, index) => {
+            if (item.name === 'twoss-io.origin' ||item.name === 'issues-testing' || item.name === 'twoss-io-videocms-demo' || item.name === 'Main' || item.name === 'demand' || item.name === 'recruitment') {return null} else {
+                flag++
+                if(flag>4){
+                    return null
+                }else{
+                    return <Col lg={6} md={12} sm={24} key={index} style={{
+                        padding: 8
+                    }}>
+                        <DelayCard wait={index * 500} item={item} index={index} setMd = {this.setModal}/>
+                    </Col>
+                }
+            }
+        })
         return (
             <Row
                 gutter={0}
