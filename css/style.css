@@ -1011,3 +1011,46 @@ h3.heading-progress {
 textarea {
     resize: none;
  } 
+
+ #month_tabs .nav-tabs{
+    font-size: 18px;
+ }
+ .imgdiv{
+     position: relative;
+     height: 150px;
+ }
+ .circle {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 0.5px solid #bbbbbb;
+    padding: 10px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.inner {
+    /* background-image: url(//placeimg.com/320/180/tech); */
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    border-radius: 50%;
+}
+#unit .row{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.desdiv{
+    border-left: solid 2px #f99200;
+    padding-top: 10px
+}
+
+span.label>a{
+    color: #fff
+}
