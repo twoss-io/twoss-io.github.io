@@ -1058,3 +1058,9 @@ span.label>a{
 #classroom table tbody tr td p:first-child{
     font-weight: 600
 }
+#classroom p{
+    margin: 10px 0 !important;
+}
+#classroom td, #classroom th {
+    vertical-align: middle;
+}
