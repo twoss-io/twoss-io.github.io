@@ -1054,3 +1054,7 @@ textarea {
 span.label>a{
     color: #fff
 }
+
+#classroom table tbody tr td p:first-child{
+    font-weight: 600
+}
