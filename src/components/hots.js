@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Row, Col, Icon, Spin, Modal, Button} from 'antd';
+import Media from 'react-media'
 import DelayCard from './delayCard'
 import {fetchRepos} from '../actions/actions'
 import {bindActionCreators} from 'redux'
@@ -66,45 +67,53 @@ class Hots extends Component {
                 }
             }
         })
+        let s_one = {
+            margin:'64px 16px'
+        }
+        let s_two = {
+            margin:'64px 128px'
+        }
         return (
-            <Row
-                gutter={0}
-                style={{
-                marginTop: 32,
-                marginBottom: 32,
-                marginLeft: 128,
-                marginRight: 128
-            }}>
-                {isFetched
-                    ? <Col
-                            span={24}
-                            style={{
-                            textAlign: 'center'
-                        }}>
-                            <Spin size="large"/>
-                        </Col>
-                    : col}
-                <div style={{display:this.state.need, textAlign:'center'}}>
-                    <br/>
-                    <h3 style={{color:'#f04134'}}>
-                        <Icon type="info-circle-o" /> 請先登入取得完整功能
-                    </h3>
-                </div>
-                <Modal
-                    className='hotsModal'
-                    title={this.state.modalTitle}
-                    visible={this.state.modalVisible}
-                    onCancel={this.handleCancel}
-                    footer={[
-                        <Button key="back" type="dashed" onClick={this.handleCancel}>離開 <Icon type="rollback" /></Button>
-                    ]}>
-                    <Row gutter={16}>
-                        <Col span={24}>
-                            <div dangerouslySetInnerHTML={{__html: this.state.modalContent}}/>
-                        </Col>
-                    </Row>
-                </Modal>
-            </Row>
+            <Media query="(max-width: 1023px)">
+            {match=>{
+                let s_ = match ? s_one : s_two
+                console.log(s_)
+                return <Row
+                    gutter={0}
+                    style={s_}>
+                    {isFetched
+                        ? <Col
+                                span={24}
+                                style={{
+                                textAlign: 'center'
+                            }}>
+                                <Spin size="large"/>
+                            </Col>
+                        : col}
+                    <div style={{display:this.state.need, textAlign:'center'}}>
+                        <br/>
+                        <h3 style={{color:'#f04134'}}>
+                            <Icon type="info-circle-o" /> 請先登入取得完整功能
+                        </h3>
+                    </div>
+                    <Modal
+                        className='hotsModal'
+                        title={this.state.modalTitle}
+                        visible={this.state.modalVisible}
+                        onCancel={this.handleCancel}
+                        footer={[
+                            <Button key="back" type="dashed" onClick={this.handleCancel}>離開 <Icon type="rollback" /></Button>
+                        ]}>
+                        <Row gutter={16}>
+                            <Col span={24}>
+                                <div dangerouslySetInnerHTML={{__html: this.state.modalContent}}/>
+                            </Col>
+                        </Row>
+                    </Modal>
+                </Row>
+            }}
+            </Media>
+            
         )
     }
 }

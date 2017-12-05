@@ -6,7 +6,7 @@ export default class Events extends Component {
     render() {
         return (
             <div>
-                <Col span={6} style={{
+                <Col lg={6} md={12} style={{
                     padding: 16
                 }}>
                     <Card
@@ -32,7 +32,7 @@ export default class Events extends Component {
                         </div>
                     </Card>
                 </Col>
-                <Col span={6} style={{
+                <Col lg={6} md={12} style={{
                     padding: 16
                 }}>
                     <Card

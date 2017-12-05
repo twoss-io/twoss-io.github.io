@@ -4,6 +4,7 @@ import {
     Col,
     Spin
 } from 'antd';
+import Media from 'react-media'
 import SmallCard from './smallCard'
 import JQCloud from './jqCloud'
 import {fetchRepos, showLoginModal} from '../actions/actions'
@@ -36,7 +37,7 @@ class Groups extends Component {
             if (item.name === 'twoss-io.origin' ||item.name === 'issues-testing' || item.name === 'twoss-io-videocms-demo' || item.name === 'Main' || item.name === 'demand' || item.name === 'recruitment') {} else {
                 return <Col
                     lg={6}
-                    md={4}
+                    md={12}
                     key={index}
                     style={{
                     padding: 16
@@ -45,25 +46,36 @@ class Groups extends Component {
                 </Col>
             }
         })
+        let s_one = {
+            padding:'32px 16px'
+        }
+        let s_two = {
+            padding:'32px 128px'
+        }
+
         return (
             <div>
                 <JQCloud item={repos}/>
-                <Row
-                    gutter={0}
-                    style={{
-                    padding:'32px 128px'
-                }}>
-                    {isFetched
-                        ? <Col
-                                span={24}
-                                style={{
-                                textAlign: 'center',
-                                paddingTop: '64px'
-                            }}>
-                                <Spin size="large"/>
-                            </Col>
-                        : col}
-                </Row>
+                <Media query="(max-width: 1023px)">
+                    {match=>{
+                        let s_ = match ? s_one : s_two
+                        return <Row
+                            gutter={0}
+                            style={s_}>
+                            {isFetched
+                                ? <Col
+                                        span={24}
+                                        style={{
+                                        textAlign: 'center',
+                                        paddingTop: '64px'
+                                    }}>
+                                        <Spin size="large"/>
+                                    </Col>
+                                : col}
+                        </Row>
+                    }}
+                </Media>
+                
             </div>
         )
     }
