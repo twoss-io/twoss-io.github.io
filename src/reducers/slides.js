@@ -6,12 +6,15 @@ import {
 
 const initialState = {
     now: 0,
-    total: 5,
+    total: 6,
     show:true,
     imgs: [
-        require("../img/hudson.jpg"), require("../img/invitation.png"), require("../img/pexels-photo-60132.jpeg"), require("../img/pexels-photo-336232.jpeg"), require("../img/pexels-photo-210158.jpeg")
+        require("../img/githublesson.jpg"), require("../img/hudson.jpg"), require("../img/invitation.png"), require("../img/pexels-photo-60132.jpeg"), require("../img/pexels-photo-336232.jpeg"), require("../img/pexels-photo-210158.jpeg")
     ],
     text: [{
+        a: 'Git 版本控制入門',
+        b: '2018/05/26(六) 下午14:00~17:00'
+    },{
         a: '開源貢獻者培育方案',
         b: '02/10-03/31 受理報名'
     },{
