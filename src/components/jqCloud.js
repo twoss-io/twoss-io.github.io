@@ -42,8 +42,8 @@ class JQCloud extends Component {
 
     initCloud=(words)=>{
         $('#cloud').jQCloud(words, {
-            colors:['#fff', '#FA9513','#FFC06E','#FA9513','#4F8AAB','#83CEF7'],
-            // colors: ['#fff'],
+            // colors:['#fff', '#FA9513','#FFC06E','#FA9513','#4F8AAB','#83CEF7'],
+            colors: ['#fff'],
             height: 260,
             delay: 10,
             autoResize: true

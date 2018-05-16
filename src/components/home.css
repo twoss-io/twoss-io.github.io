@@ -32,3 +32,11 @@
     height: 100%;
     width: auto;
 }
+
+.link-img-03{
+    background-image: url('//placeimg.com/320/180/tech');
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: auto;
+}

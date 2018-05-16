@@ -5,6 +5,7 @@ import pages from './pages'
 import issues from './issues'
 import comment from './comment'
 import user from './user'
+import act from './act'
 
 export default combineReducers({
   pages,
@@ -12,5 +13,6 @@ export default combineReducers({
   slides,
   issues,
   comment,
-  user
+  user,
+  act
 })

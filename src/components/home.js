@@ -63,7 +63,32 @@ export default class Home extends Component {
                         let s_ = match ? s_one : s_two
                         return <Row
                             style={s_}>
-                            <Col span={12} offset={6} >
+                            <Col span={8} offset={3} >
+                                <Card
+                                    onClick={()=>window.open('/107contributor.html', '_blank')} 
+                                    style={{
+                                    width: '100%'
+                                }}
+                                    bodyStyle={{
+                                    padding: 0,
+                                    cursor:'pointer'
+                                }}>
+                                    <div
+                                        className="custom-image"
+                                        style={{
+                                        height: 100
+                                    }}>
+                                        <div className="custom-img" style={{backgroundImage:'url("'+require('../img/heading.jpg')+'")'}}/>
+                                    </div>
+                                    <div className="custom-card">
+                                        <h3>開源貢獻者培育方案</h3>
+                                        <p>&nbsp;</p>
+                                        <p>日期：107/02/10 - 03/31</p>
+                                        <p>受理報名 ( 線上填寫表單 )</p>
+                                    </div>
+                                </Card>
+                            </Col>
+                            <Col span={8} offset={2} >
                                 <Card
                                     onClick={()=>window.open('/106itmonth.html', '_blank')} 
                                     style={{
@@ -154,8 +179,7 @@ export default class Home extends Component {
                             style={{...s_,
                             background:'#e9e9e9'
                         }}>
-                            <Col lg={2} md={0}/>
-                            <Col lg={8} md={11}>
+                            <Col lg={6} md={12}>
                                 <Card  
                                 onClick={()=>{let win = window.open('http://twoss.io/oss-tourist/', '_blank'); win.opener=null}} 
                                 bodyStyle={{
@@ -175,8 +199,8 @@ export default class Home extends Component {
                                     </div>
                                 </Card>
                             </Col>
-                            <Col lg={4} md={2}/>
-                            <Col lg={8} md={11}>
+                            <Col lg={3} md={0}/>
+                            <Col lg={6} md={12}>
                                 <Card 
                                 onClick={()=>{let win = window.open('http://twoss.io/oss-collection/index.html', '_blank'); win.opener=null}} 
                                 bodyStyle={{
@@ -196,7 +220,27 @@ export default class Home extends Component {
                                     </div>
                                 </Card>
                             </Col>
-                            <Col lg={2} md={0}/>
+                            <Col lg={3} md={0}/>
+                            <Col lg={6} md={24}>
+                                <Card  
+                                onClick={()=>{let win = window.open('https://twoss.gitbooks.io/open-source-use-case/', '_blank'); win.opener=null}} 
+                                bodyStyle={{
+                                    padding: 0,
+                                    cursor:'pointer'
+                                }} style={{ width: "100%" }}>
+                                    <div
+                                        className="custom-image"
+                                        style={{
+                                        height: 100
+                                    }}>
+                                        <div className="link-img-03"/>
+                                    </div>
+                                    <div className="custom-card">
+                                        <h3>開源應用典範案例</h3>
+                                        <p><a target="_blank" href="https://twoss.gitbooks.io/open-source-use-case/" rel="noopener noreferrer">open-source-use-case</a></p>
+                                    </div>
+                                </Card>
+                            </Col>
                         </Row>
                     }}
                     </Media>

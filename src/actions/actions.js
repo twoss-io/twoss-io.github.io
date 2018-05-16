@@ -314,3 +314,20 @@ export function postCom(repo, issue, data={body:''}) {
         })
     }
 }
+
+function receiveAct(json) {
+    return {
+        type: 'RECEIVE_ACT',
+        acts: json 
+    }
+}
+
+export function getAct(){
+    return dispatch =>{
+        fetchapi('https://api.github.com/orgs/twoss-io/events').then(res=>{
+            return res.json()
+        }).then(res => {
+            return dispatch(receiveAct(res))
+        }).catch(err => console.log(err))
+    }
+}

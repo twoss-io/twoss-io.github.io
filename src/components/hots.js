@@ -54,7 +54,7 @@ class Hots extends Component {
         let isFetched = this.props.repos.isFetched
         let flag = 0
         let col = repos.map((item, index) => {
-            if (item.name === 'twoss-io.origin' ||item.name === 'issues-testing' || item.name === 'twoss-io-videocms-demo' || item.name === 'Main' || item.name === 'demand' || item.name === 'recruitment') {return null} else {
+            if (item.name === 'oss-collection' ||item.name === 'oss-tourist' ||item.name === 'twoss-io.origin' ||item.name === 'twoss-io.origin' ||item.name === 'issues-testing' || item.name === 'twoss-io-videocms-demo' || item.name === 'Main' || item.name === 'demand' || item.name === 'recruitment') {return null} else {
                 flag++
                 if(flag>4){
                     return null
